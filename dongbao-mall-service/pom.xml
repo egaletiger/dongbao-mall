@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dongbao-mall-parent</artifactId>
+        <groupId>com.sjzd</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dongbao-mall-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dongbao-oms</module>
+        <module>dongbao-pms</module>
+        <module>dongbao-ums</module>
+        <module>dongbao-pay</module>
+        <module>dongbao-cart</module>
+        <module>dongbao-dictionary</module>
+        <module>dongbao-sms</module>
+        <module>dongbao-cms</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!--  mybatis-plus依赖      -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+    </dependencies>
+</project>
